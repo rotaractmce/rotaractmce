@@ -3,6 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Mobile styles */
+@media (max-width: 600px) {
+  .your-class {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .your-class {
+    font-size: 16px;
+    padding: 20px;
+  }
+}
+
 .header{
     min-height: 100vh;
     width: 100%;
