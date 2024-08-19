@@ -1,42 +1,52 @@
-*{
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #2e1e41de; /* Dark background */
+    color: white; /* White text for visibility */
 }
-html{
-     scroll-behavior: smooth;
-    }
-body{
-    background-color: #21212cf0;
-}
-.header{
+
+.header {
     min-height: 100vh;
     width: 100%;
-    background: #21212cf0;
+    background: #21212ce1;
     position: relative;
+    padding: 0 15px;
 }
-.navbar{
+
+.navbar {
     display: flex;
-    padding: 20px 50px;
+    padding: 20px;
     align-items: center;
     background: #02021c;
+    flex-wrap: wrap;
 }
-nav{
+
+nav {
     flex: 1;
     text-align: right;
 }
-.logo img{
+
+.logo img {
     transition: 0.8s ease-in-out;
     margin-top: 4px;
     cursor: pointer;
 }
-.logo img:hover{
+
+.logo img:hover {
     transform: scale(1.12) rotate(360deg);
 }
-nav ul{
-    display: inline-block;
+
+/* Navigation Styles */
+nav ul {
+    display: flex;
     list-style-type: none;
+    padding-left: 0;
+    margin: 0;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     border: 1px solid #8f7ace;
     padding: 7px 22px;
@@ -45,158 +55,124 @@ nav ul li{
     transition: 0.3s;
     cursor: pointer;
 }
-a{
+
+nav ul li:hover {
+    background: #c4197a;
+    border: 1px solid #8f7ace;
+    transform: translate(-6px, -6px);
+}
+
+a {
     text-decoration: none;
     color: #8f7ace;
     font-size: 15.5px;
-    font-family: 'Poppins', sans-serif;
     cursor: pointer;
 }
-nav ul li:hover a{
+
+nav ul li:hover a {
     color: #ffffff;
 }
-nav ul li:hover{
-    background: #c4197a;
-    border: 1px solid #8f7ace;
-    transform: translate(-6px,-6px);
-}
 
-  .about1{
-    width: 90%;
-    height: 15vh;
-    margin: auto;
-    background-color: #21212cf0;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    border-radius: 1rem;
-    margin-top: 2rem;
-    font-family: 'Poppins', sans-serif;
-    color: #8f7ace;
-    display: flex;
-    align-items: center;
-    font-weight: 800;
-    justify-content: center;
-    font-size: 60px;
-    padding-top: 0%;
-    padding-left: 1vw;
-    border-left: 0.3rem solid #8f7ace;
-}
-
-hr{
-    width: 90%;
-    margin: auto;
-    margin-top: 2rem;
-    border: 1.5px solid #8f7ace;
-    border-radius: 1em;
-}
-
-#social_media{
-    font-family: 'Poppins',sans-serif;
+/* Main Content Styles */
+.about1 {
     text-align: center;
-    color: #ffffff;
-    margin-top: 2rem;
-    font-weight: 500;
+    font-size: 28px;
+    margin-top: 20px;
+    font-family: 'Supermercado One', cursive;
 }
-    .social_media2{
-    width: 90%;
-    height: 40vh;
+
+hr {
+    margin: 10px auto;
+    width: 80%;
+    border: 1px solid #8f7ace;
+}
+
+#social_media {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.social_media2 {
     display: flex;
-    flex-direction: row;
-    border-radius: 1rem;
-    border-left: 0.3rem solid #8f7ace;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    justify-content: space-around;
-    background-color:#21212cf0;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    }
-    .insta{
-        width: 25%;
-        height: 30vh;
-        display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social_media2 div {
+    display: inline-block;
+}
+
+.insta_img, .linkedin_img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #131417;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footpara {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        background-color: rgb(230, 67, 102);
-        border-radius: 0.5vw;
-    }
-    .linkedin{
-        width: 25%;
-        height: 30vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: rgb(22, 58, 100);
-        border-radius: 0.5vw;
     }
 
-    .insta:hover{
-        opacity: 0.7;
+    .navbar .logo img {
+        max-width: 150px;
     }
-    .linkedin:hover{
-        opacity: 0.7;
-    }
-    
-    .insta_img {
-        width: 10vw;
-        height: 20vh;
-    }
-    
-    .linkedin_img {
-        width: 10vw;
-        height: 20vh;
-        
-    }
-    #youtube{
-        margin-top: 2vh;
-        font-family: 'Poppins',sans-serif;
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
         text-align: center;
-        color: #ffffff;
-        margin-top: 2rem;
-        font-weight: 500;
+        margin-top: 10px;
     }
-    .youtube2{
+
+    .about1 {
+        font-size: 24px;
+    }
+
+    #social_media {
+        font-size: 20px;
+    }
+
+    .social_media2 {
+        flex-direction: column;
+    }
+
+    .insta_img, .linkedin_img {
+        width: 60px;
+        height: 60px;
+    }
+
+    hr {
         width: 90%;
-    height: 40vh;
-    display: flex;
-    flex-direction: row;
-    border-radius: 1rem;
-    border-left: 0.3rem solid #8f7ace;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    justify-content: space-around;
-    background-color: #2a2a2c;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     }
-    .youtube3
-    {
-        width: 30%;
-        height: 30vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: darkred;
-        border-radius: 0.5vw;
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .navbar {
+        justify-content: space-between;
     }
-    .youtube_img{
-        width: 100%;
-        height: 100%;
+
+    .logo img {
+        max-width: 170px;
     }
-    .youtube3:hover{
-        opacity: 0.7;
+
+    nav ul {
+        gap: 15px;
     }
-    .footer1 {
-        background-color: #8f7ace;
-        color: white;
-        height: 10vh;
-        margin: 0px;
-        line-height: 5vh;
-        text-align: center;
-    }
-    .footer1 p{
-        padding-top: 15px;
-        font-size: 15px;
-        font-family: 'Poppins',sans-serif;
-    }
+}
