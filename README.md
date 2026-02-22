@@ -1,4 +1,4 @@
-Rotaract club website developed by Kiran B K (2024 batch)- Feel free to contact anytime
+Rotaract club website developed by Kiran B K (2024 batch)- Feel free to contact anytime my mail id is bkkiran716@gmail.com
 
 This is both mobile and desktop supported website.
 If you want to make changes to the website download the zip file and make changes on your system. Then upload it to this repository.
