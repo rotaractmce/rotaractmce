@@ -1,68 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="gfg_con.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Supermercado+One&display=swap" rel="stylesheet">
-    <!-- Consolidated Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200;300;400;500&family=Roboto+Mono:wght@100&family=Supermercado+One&display=swap" rel="stylesheet">
+    <meta name="description" content="Get in touch with the Rotaract Club of MCE through our social media handles.">
+    <title>Contact Us - Rotaract Club MCE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header>
-        <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <img src="Rotaract.png" alt="Rotaract Club Logo" width="190" height="100">
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="aboutus.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="events.html">Events</a></li>
-                    </ul>
-                </nav>
-                <div class="logo">
-                    <img src="Mce logo.png" alt="Malnad College of Engineering Logo" width="150" height="100">
-                </div>
-            </div>
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/Rotaract.png" alt="Rotaract Club Logo">
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About</a>
+                <a href="events.html">Events</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a href="index.html" class="nav-logo">
+                <img src="images/Mce logo.png" alt="Malnad College of Engineering Logo">
+            </a>
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
+        <div class="nav-overlay"></div>
     </header>
 
-    <main>
-        <div class="about1">
-            CONTACT US
-        </div>
-        <hr>
-        <h2 id="social_media">Social Media Handles</h2>
-        <div class="social_media2">
-            <div class="insta">
-                <a href="https://www.instagram.com/rotaract_clubmce_?igsh=MWc1anpzYmNqeGx2Nw==" target="_blank">
-                    <img src="intagram4.png" alt="Instagram" class="insta_img">
+    <section class="page-hero">
+        <h1>CONTACT US</h1>
+    </section>
+
+    <main class="main-content">
+        <section class="contact-section">
+            <h2>Social Media Handles</h2>
+            <div class="social-links">
+                <a href="https://www.instagram.com/rotaract_clubmce_?igsh=MWc1anpzYmNqeGx2Nw==" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <img src="images/intagram4.png" alt="Instagram">
+                    <span>Instagram</span>
+                </a>
+                <a href="https://www.facebook.com/rotaractclubmce/" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <img src="images/facebook.png" alt="Facebook">
+                    <span>Facebook</span>
                 </a>
             </div>
-            <div class="linkedin">
-                <a href="https://www.facebook.com/rotaractclubmce/" target="_blank">
-                    <img src="facebook.png" alt="Facebook" class="linkedin_img">
-                </a>
+            <div class="contact-info">
+                <p>Email us at</p>
+                <a href="mailto:rotaractclub.mce91@gmail.com">rotaractclub.mce91@gmail.com</a>
             </div>
-        </div>
+        </section>
     </main>
 
-    <footer>
-        <div class="footer1">
-            <p class="footpara">Copyright &copy; Rotaract Club. All Rights Reserved | Gmail: rotaractclub.mce91@gmail.com</p>
-            <p>Developed by Rtr. Kiran B K</p>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-bottom">
+                <span>Copyright &copy; Rotaract Club. All Rights Reserved</span>
+                <span>|</span>
+                <a href="mailto:rotaractclub.mce91@gmail.com">rotaractclub.mce91@gmail.com</a>
+            </div>
+            <p class="footer-credit">Developed by Rtr. Kiran B K</p>
         </div>
     </footer>
-</body>
 
+    <script src="main.js"></script>
+</body>
 </html>
